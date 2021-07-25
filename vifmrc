@@ -589,6 +589,8 @@ nnoremap <a-e> <c-w>j
 nnoremap <Tab> <c-w>w
 nnoremap <Space>rc :write | edit $MYVIFMRC | restart full<cr>
 
+nnoremap <a-l> :!lazygit<cr>
+
 if has('win')
     nnoremap <Space>ahk :e ~/Desktop/colemak.ahk<cr>
     nnoremap gdes :cd ~/Desktop<cr>
