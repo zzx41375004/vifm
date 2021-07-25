@@ -598,4 +598,5 @@ if has('win')
     nnoremap gsc :cd C:\\<cr>
 endif
 
+colorscheme darkdesert
 
