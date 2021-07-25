@@ -1,7 +1,8 @@
 # vifm配置
 
-总的来说, vifm比ranger运行速度更快, 因此我从ranger转到vifm.
-这是我的vifm配置, 我使用colemak键盘, 如果你使用qwer请不要直接复制
+总的来说,, vifm 比 ranger 运行速度更快,, 也更容易配置,,  因此我决定从ranger转到 vifm..
+
+PS:  我使用colemak键盘,, qwer使用者不建议直接复制
 
 ## 重要的教程
 
