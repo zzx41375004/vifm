@@ -4,8 +4,6 @@
 
 PS:  我使用colemak键盘,, qwer使用者不建议直接复制
 
-zzx
-
 ## 重要的教程
 
 [vifmimg is a script to preview image in vifm](https://github.com/cirala/vifmimg)
