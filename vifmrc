@@ -553,6 +553,8 @@ nnoremap <c-u> <c-w>x
 
 command! Q :execute '!echo %d > ~/.config/vifm/lastdir' | quit
 
+nnoremap gst :cd ~/st<cr>
+nnoremap gdwm :cd ~/dwm<cr>
 nnoremap gusr :cd usr/<cr>
 nnoremap gc :cd ~/.config<cr>
 nnoremap gv :cd ~/Videos<cr>
@@ -588,7 +590,8 @@ nnoremap <a-u> <c-w>k
 nnoremap <a-e> <c-w>j
 nnoremap <Tab> <c-w>w
 nnoremap <Space>rc :write | edit $MYVIFMRC | restart full<cr>
-
+nnoremap <Space>ba :edit ~/.bashrc<cr>
+nnoremap f :!nvim $(fzf)<cr>
 nnoremap <a-l> :!lazygit<cr>
 
 if has('win')
