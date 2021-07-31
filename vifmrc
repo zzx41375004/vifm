@@ -553,10 +553,6 @@ nnoremap <c-u> <c-w>x
 
 command! Q :execute '!echo %d > ~/.config/vifm/lastdir' | quit
 
-nnoremap gst :cd ~/st<cr>
-nnoremap gdwm :cd ~/dwm<cr>
-nnoremap gnvi :cd ~/.config/nvim<cr>
-nnoremap gusr :cd usr/<cr>
 nnoremap gc :cd ~/.config<cr>
 nnoremap gv :cd ~/Videos<cr>
 nnoremap gp :cd ~/Pictures<cr>
@@ -565,6 +561,20 @@ nnoremap gn :cd ~/Documents/notes<cr>
 nnoremap gdoc :cd ~/Documents<cr>
 nnoremap gdow :cd ~/Downloads<cr>
 nnoremap gatc :cd ~/Documents/algorithm/atcoder<cr>
+
+if has('win')
+    set shell=powershell.exe
+    nnoremap <Space>ahk :e ~/Desktop/colemak.ahk<cr>
+    nnoremap gdes :cd ~/Desktop<cr>
+    nnoremap gapp :cd ~/AppData<cr>
+    nnoremap <Space>ps :e C:/Users/magicPro/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1<CR>
+else
+    nnoremap gusr :cd usr/<cr>
+    nnoremap <Space>ba :edit ~/.bashrc<cr>
+    nnoremap gst :cd ~/st<cr>
+    nnoremap gdwm :cd ~/dwm<cr>
+    nnoremap gnvi :cd ~/.config/nvim<cr>
+endif
 
 nnoremap o :!nvim %c<cr>
 nnoremap n h
@@ -591,17 +601,7 @@ nnoremap <a-u> <c-w>k
 nnoremap <a-e> <c-w>j
 nnoremap <Tab> <c-w>w
 nnoremap <Space>rc :write | edit $MYVIFMRC | restart full<cr>
-nnoremap <Space>ba :edit ~/.bashrc<cr>
 nnoremap f :!nvim $(fzf)<cr>
 nnoremap <a-l> :!lazygit<cr>
 
-if has('win')
-    set shell=powershell.exe
-    nnoremap <Space>ahk :e ~/Desktop/colemak.ahk<cr>
-    nnoremap gdes :cd ~/Desktop<cr>
-    nnoremap gapp :cd ~/AppData<cr>
-    nnoremap gsc :cd C:\\<cr>
-endif
-
 colorscheme darkdesert
-
