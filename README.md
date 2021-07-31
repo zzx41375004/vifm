@@ -4,7 +4,7 @@
 
 PS:  我使用 colemak 键盘,, qwer 使用者不建议直接复制
 
-## 重要的教程
+## 有用的教程
 
 [vifmimg is a script to preview image in vifm](https://github.com/cirala/vifmimg)
 
