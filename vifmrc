@@ -1,6 +1,6 @@
 " filextype *.c,*.cpp,*.txt,*.py,*.ps1 nvim %c
 
-" set shell=powershell.exe
+set shell=powershell.exe
 " vim: filetype=vifm :
 " Sample configuration file for vifm (last updated: 9 September, 2020)
 " You can edit this file by hand.
